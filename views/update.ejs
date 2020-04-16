@@ -1,0 +1,32 @@
+
+
+<%- include('header'); -%>
+
+<h1>Modifier Une citation</h1>
+
+<% test.forEach(function (citation) { %>
+
+    <form action="/update/<%= citation.id %>" method="POST">
+    <% }) %>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Auteur</label>
+        <input type="text" class="form-control" id="input" name="Auteur">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Citation</label>
+        <input type="text" class="form-control" id="input"  name="Citation">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Source</label>
+        <input type="text" class="form-control" id="input" name="Source">
+    </div>
+
+    
+    <button type="submit" class="btn btn-dark">Modifier</button>
+
+</form>
+
+    
+</body>
+</html>
+

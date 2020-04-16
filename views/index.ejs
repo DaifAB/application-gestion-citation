@@ -1,0 +1,35 @@
+<%- include('header'); -%>
+<div class="container">
+
+
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr class="table100-head">
+                <th class="column">Citation</th>
+                <th class="column">Source</th>
+                <th class="column">Auteur</th>
+                <th class="column">Supprimer</th>
+                <th class="column">Modifier</th>
+
+            </tr>
+        </thead>
+         <tbody>
+         <% cit.forEach(function (citation) { %>
+            <tr>
+                <td class="column"><%= citation.citation %></td>
+                <td class="column"><%= citation.source %></td>
+                <td class="column"><%= citation.auteurName %></td>
+                <td class="column"><a href="/delete/<%= citation.id %> "> DELETE</a> </td>
+                <td class="column"><a href="/update/<%= citation.id %> "> UPDATE</a> </td>
+
+            </tr>
+         <% }) %>
+         </tbody>
+    </table>
+
+    <a href="/" class="add">/Add quotes</a>
+</div>
+
+
+</body>
+</html>
