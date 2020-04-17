@@ -19,6 +19,9 @@ node app.js
 step 4 : Type http://localhost:3000/citation in your browser to acces the Application
 
 Useful Information :
-     Database Name : citationDB
-     user : Sketch
-     password : abdel996
+
+Database Name : citationDB
+
+user : Sketch
+
+password : abdel996
