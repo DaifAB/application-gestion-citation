@@ -18,7 +18,7 @@ node app.js
 
 step 4 : Type http://localhost:3000/citation in your browser to acces the Application
 
-Useful Information :
+Useful Informations :
 
 Database Name : citationDB
 
